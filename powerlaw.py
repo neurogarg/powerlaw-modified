@@ -2117,6 +2117,7 @@ def plot_pdf(data, ax=None, linear_bins=False, **kwargs):
     bin_centers = (edges[1:]+edges[:-1])/2.0
     from numpy import nan
     hist[hist==0] = nan
+    print("kaveri")
     if not ax:
         import matplotlib.pyplot as plt
         plt.plot(bin_centers, hist, **kwargs)
